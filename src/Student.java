@@ -4,7 +4,6 @@ public class Student
  {
 	int rollno;
 	String name;
-	
 	Scanner sc=new Scanner(System.in);
 	double[] marks=new double[3];
   public void input()
@@ -14,6 +13,7 @@ public class Student
 	  System.out.println("Enter roll no.");
 	  rollno=sc.nextInt();
 	  System.out.println("Enter Phy. Chem. & Maths Marks res.");
+	 
 	  for(int j=0;j<3;j++)
 	  marks[j]= sc.nextDouble();
 }
