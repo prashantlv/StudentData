@@ -7,6 +7,10 @@ public class Student
 	
 	Scanner sc=new Scanner(System.in);
 	double[] marks=new double[3];
+	public String toString()
+  {
+	  return "Name : "+name +"\nRoll no : "+rollno+"\nPhysics Marks : "+marks[0]+"\nChemistry Marks : "+marks[1]+"\nMaths Marks : "+marks[2]+"\n";
+  }
   public void input()
 {
 	  System.out.println("Enter name");
@@ -18,14 +22,15 @@ public class Student
 	  marks[j]= Double.parseDouble(sc.nextLine());
 }
   public void display()
-  {
-	  System.out.println("Name : "+name);
-	  System.out.println("Roll no : "+rollno);
-	 // for(int k=0;k<3;k++)
-	 // System.out.println("Marks :"+marks[k]);
-	  System.out.println("Physics Marks :"+marks[0]);
-	  System.out.println("Chemistry Marks :"+marks[1]);
-	  System.out.println("Maths Marks :"+marks[2]);
-	  System.out.println("\n");
+   {
+// 	  System.out.println("Name : "+name);
+// 	  System.out.println("Roll no : "+rollno);
+// 	 // for(int k=0;k<3;k++)
+// 	 // System.out.println("Marks :"+marks[k]);
+// 	  System.out.println("Physics Marks :"+marks[0]);
+// 	  System.out.println("Chemistry Marks :"+marks[1]);
+// 	  System.out.println("Maths Marks :"+marks[2]);
+// 	  System.out.println("\n");
+	  toString();	
   }
 }
