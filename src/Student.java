@@ -12,10 +12,10 @@ public class Student
 	  System.out.println("Enter name");
 	  name=sc.nextLine();
 	  System.out.println("Enter roll no.");
-	  rollno=sc.nextInt();
+	  rollno=Integer.parseInt(sc.nextLine());
 	  System.out.println("Enter Phy. Chem. & Maths Marks res.");
 	  for(int j=0;j<3;j++)
-	  marks[j]= sc.nextDouble();
+	  marks[j]= Double.parseDouble(sc.nextLine());
 }
   public void display()
   {
